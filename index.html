@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samarti Art</title>
+<meta name="description" content="Samarti Art is the company behind Mapories Books: printed photo books made from people's own trips.">
+<link rel="canonical" href="https://samartiart.com/">
+<style>
+/* fonts are served from this site: no third-party requests */
+@font-face{font-family:"Source Serif 4"; src:url(fonts/source-serif-4.woff2) format("woff2"); font-weight:400 600; font-display:swap}
+@font-face{font-family:"IBM Plex Mono"; src:url(fonts/ibm-plex-mono.woff2) format("woff2"); font-weight:400; font-display:swap}
+
+:root{--bg:#ffffff; --fg:#16181d; --mut:#646a76; --line:#dcdfe5;
+  --serif:"Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#121418; --fg:#e9ebef; --mut:#9aa1ad; --line:#2c3038; color-scheme:dark}
+}
+
+*{box-sizing:border-box}
+body{margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 var(--serif)}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--fg); outline-offset:3px}
+.in{max-width:620px; margin:0 auto; padding:0 20px 56px; display:flex; flex-direction:column; gap:56px}
+
+header{display:flex; flex-direction:column; align-items:center; gap:14px; padding:34px 0 22px; border-bottom:1px solid var(--line)}
+.seal{display:grid; place-items:center; width:54px; height:54px; border:1.5px solid var(--fg); border-radius:50%;
+  font:600 19px/1 var(--serif); letter-spacing:.04em; text-decoration:none}
+nav{display:flex; gap:22px; font-size:14px; color:var(--mut)}
+nav a{text-decoration:none}
+nav a:hover{color:var(--fg)}
+
+.hero{display:flex; flex-direction:column; align-items:center; gap:18px; text-align:center}
+h1{font:600 40px/1.15 var(--serif); margin:0}
+.lede{max-width:56ch; font-size:17px; margin:0}
+
+h2{font:400 12px/1.6 var(--mono); letter-spacing:.12em; text-transform:uppercase; color:var(--mut); margin:0 0 14px}
+
+.brand{display:grid; grid-template-columns:1fr auto; gap:16px 28px; align-items:end;
+  border-top:1px solid var(--fg); border-bottom:1px solid var(--line); padding:18px 0}
+.brand h3{font:600 22px/1.1 var(--serif); margin:0 0 8px}
+.brand p{margin:0; color:var(--mut)}
+.go{font-weight:600; text-decoration:none; border-bottom:2px solid var(--fg); padding-bottom:2px; white-space:nowrap}
+
+.contact{text-align:center}
+address{font-style:normal; display:flex; flex-direction:column; gap:10px}
+address p{margin:0}
+.num{font-family:var(--mono); font-size:15px}
+.mail{font-family:var(--mono); font-size:17px}
+.mail a{text-decoration:none}
+
+footer{border-top:1px solid var(--line); padding-top:18px; font-size:13px; color:var(--mut);
+  display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px 24px}
+
+@media (max-width:560px){ .brand{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<div class="in">
+  <header>
+    <a class="seal" href="#top" aria-label="Samarti Art">SA</a>
+    <nav><a href="#brands">Brands</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <section class="hero" id="top">
+    <h1>Samarti Art</h1>
+    <p class="lede">Samarti Art is the company behind Mapories Books. We design, sell and ship printed photo books made from people's own trips.</p>
+  </section>
+
+  <section id="brands">
+    <h2>Our brands</h2>
+    <div class="brand">
+      <div>
+        <h3>Mapories Books</h3>
+        <p>Upload the photos of one trip. The route, the chapters, the captions and the cover are made for you, then the book is printed and delivered to your door.</p>
+      </div>
+      <a class="go" href="https://maporiesbooks.com">maporiesbooks.com →</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <!-- TODO: add the legal form, street address and UIC from the Commercial Register -->
+    <address>
+      <p><b>Samarti Art</b></p>
+      <p>Sofia, Bulgaria</p>
+      <p class="mail"><a href="mailto:office@samartiart.com">office@samartiart.com</a></p>
+    </address>
+  </section>
+
+  <footer>
+    <span>© 2026 Samarti Art</span>
+    <span>Mapories Books is a trade name of Samarti Art.</span>
+  </footer>
+</div>
+</body>
+</html>
